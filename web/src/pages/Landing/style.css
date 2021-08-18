@@ -3,17 +3,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
  
+ 
+} 
+
+.logo_container {
+  width: 700px;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+   
 }
 
 .logo_container img {
-   width: 270px;
-   margin-bottom: 25px;
+  width:650px;
+  margin-bottom: 12px;
+  
  }
 
  .logo_container h2  {
    font-size: 25px;
   }
 
+  .button_class {
+    width: 200px;
+    height: 55px;
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+   
+    
+  }
 
+  .button_class a {
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+  }
