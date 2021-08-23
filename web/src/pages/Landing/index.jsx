@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './style.css';
 import logoPanda from '../../assets/images/logo.png'
@@ -13,7 +14,7 @@ export default function Landing() {
         </div>
        
         <div className="button_class">
-            <a href="" className="cadastro">Cadastre-se</a>
+            <Link to ="/formulario" className="cadastro">Cadastre-se</Link>
         </div>
      </div>
     )

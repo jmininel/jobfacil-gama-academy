@@ -10,9 +10,8 @@ function Routes() {
     return (
         <BrowserRouter>
           <Switch>
-           <Route path="/" component={Landind} />
-           <Route path="/formulario" component={Form} /> 
-           
+            <Route path="/" exact component={Landind} />
+            <Route path="/formulario" component={Form} /> 
           </Switch>
         </BrowserRouter>
 

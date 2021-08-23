@@ -1,6 +1,6 @@
 :root {
 
-  --color-background: #EFEFEF;
+
   --color-primary: #ff1010;
   --color-font: rgb(253, 245, 245);
 
@@ -18,11 +18,12 @@ html, body {
 }
 
 body {
-  background: var(--color-background) ;
+  background-image: url(../images/BG.svg) ;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 body,
 input,

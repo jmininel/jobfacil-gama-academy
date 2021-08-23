@@ -30,17 +30,17 @@
   .button_class {
     width: 200px;
     height: 55px;
-    background: var(--color-primary);
+    background: #e3e3e7;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 30px;
    
     
   }
 
   .button_class a {
-    color: #fff;
+    color: #4D33EB;
     border: none;
     text-decoration: none;
     font-size: 20px;
