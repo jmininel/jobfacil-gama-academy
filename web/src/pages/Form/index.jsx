@@ -1,11 +1,13 @@
 import { useState } from 'react';
-
-
 import './style.css'
 
 
+
  export default function Form() {
+
        const [formValues, setFormValues] = useState({});
+
+    
            
        const handleInputChange = (e) => {
            const { name, value } = e.target;
@@ -17,10 +19,10 @@ import './style.css'
            const formData = new FormData(e.target);
            const data = Object.fromEntries(formData);
 
-          console.log('*** handleSubmit', data);
+         console.log('*** handleSubmit', data);
        };
 
-       console.log('*** formValues',formValues );
+      console.log('*** formValues',formValues );
 
     return (
 
@@ -32,22 +34,31 @@ import './style.css'
           
            <div className="input-form">
           <label htmlFor="name">Nome Completo</label>
-          <input type="text" name="nome" onChange={handleInputChange} value={formValues.nome || ''} />
+          <input className="inputValue" type="text" name="nome" onChange={handleInputChange} value={formValues.nome || ''} />
            </div>
           
 
           <div className="input-form">
              <label htmlFor="job">Cargo Pretendido</label>
-             <input type="text" name="cargo" onChange={handleInputChange} value={formValues.cargo || ''}  />
+             <input className="inputValue" type="text" name="cargo" onChange={handleInputChange} value={formValues.cargo || ''}  />
           </div>
 
           <div className="input-form">
              <label htmlFor="data-nascimento">Data de Nascimento</label>
-             <input type="text" name="age" onChange={handleInputChange} value={formValues.age || ''}  />
-             
-             <button type="submit">Enviar</button>
-             
-          </div>
+             <input className="inputValue" type="text" name="age" onChange={handleInputChange} value={formValues.age || ''}  />
+           </div>
+
+           <div className="input-form">
+             <label htmlFor="cep">CEP</label>
+             <input className="inputValue" type="text" name="cep"  onChange={handleInputChange} value={formValues.cep || ''}/>
+           </div>
+
+           <div className="input-form">
+             <label htmlFor="endereco">Endereco</label>
+             <input className="inputValue" type="text" name="endereco" onChange={handleInputChange} value={formValues.endereco || ''}  />
+           </div>
+
+             <button className="btn" type="submit">Enviar</button>
          </form>
      </main>
    </div> 
