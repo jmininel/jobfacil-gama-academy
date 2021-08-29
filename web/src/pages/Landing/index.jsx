@@ -14,7 +14,7 @@ export default function Landing() {
         </div>
        
         <div className="button_class">
-            <Link to ="/formulario" className="cadastro">Cadastre-se</Link>
+            <Link to ="/cep" className="cadastro">Cadastre-se</Link>
         </div>
      </div>
     )
