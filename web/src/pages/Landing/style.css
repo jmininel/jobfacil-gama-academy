@@ -30,7 +30,8 @@
   .button_class {
     width: 200px;
     height: 55px;
-    background: #e3e3e7;
+    background: #cbf1f1;
+    border: 1px solid #7163f0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +41,7 @@
   }
 
   .button_class a {
-    color: #4D33EB;
+    color: #7163f0;
     border: none;
     text-decoration: none;
     font-size: 20px;

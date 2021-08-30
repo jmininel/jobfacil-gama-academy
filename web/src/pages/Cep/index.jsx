@@ -30,20 +30,20 @@ import { useState } from 'react';
         
          <div className="fieldSepareated">
             <div className="input-form">
-              <span>Nome Completo</span>
+              <span>*Nome Completo</span>
               <input className="inputValue" type="text" name="nome"  />
            </div>
           
 
             <div className="input-form">
-               <span>Cargo Pretendido</span>
+               <span>*Cargo Pretendido</span>
                <input className="inputValue" type="text" name="cargo"  />
             </div>
         </div >
          
         <div className="fieldSepareated"> 
           <div className="input-form">
-            <span>Data de Nascimento</span>
+            <span>*Data de Nascimento</span>
              <input className="inputValue" type="text" name="age"  />
            </div>
 
@@ -55,13 +55,13 @@ import { useState } from 'react';
 
          <div className="fieldSepareated" id="fieldCollumn"> 
             <div className="input-form" id="cepForm">
-              <span>Cep</span>
-            <input value={cep} onChange={e => setCep(e.target.value)} type="text" onClick={cepApi}/>
+              <span>*Cep</span>
+            <input value={cep} onChange={e => setCep(e.target.value)} type="text" onClick={cepApi} id="cepInput"/>
             </div>
 
             <div className="input-form">
             <span>Rua</span>
-            <input type="text" id="rua"></input>
+            <input type="text" id="rua" ></input>
           </div>
      
         </div>  
@@ -69,7 +69,7 @@ import { useState } from 'react';
      <div className="fieldSepareated"> 
             
           <div className="input-form">
-            <span>Numero</span>
+            <span>*Numero</span>
             <input type="text" id="number"></input>
           </div>
 
@@ -86,7 +86,7 @@ import { useState } from 'react';
         </div>
 
         <div className="input-form">
-           <span>Estdo</span>
+           <span>Estado</span>
            <input type="text" id="state"></input>
         </div>
        </div>
@@ -98,12 +98,11 @@ import { useState } from 'react';
             </div>
 
             <div className="input-form">
-              <span>Email</span>
+              <span>*Email</span>
               <input type="text" id="email"></input>
             </div>
        </div>
-        
-        
+          
        <div className="fieldSepareated">  
            <div className="input-form">
                 <span>*RG</span>
@@ -112,6 +111,18 @@ import { useState } from 'react';
 
             <div className="input-form">
               <span>*CPF</span>
+              <input type="text" id="email"></input>
+            </div>
+       </div>
+  
+       <div className="fieldSepareated">  
+           <div className="input-form">
+                <span>Possui Veiculo</span>
+                <input type="text" id="rg"></input>
+            </div>
+
+            <div className="input-form">
+              <span>*Habilitaca</span>
               <input type="text" id="email"></input>
             </div>
        </div>
