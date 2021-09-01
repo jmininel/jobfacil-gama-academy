@@ -3,7 +3,11 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Landind from '../src/pages/Landing';
 
-import Cep from '../src/pages/Cep'
+import Cep from '../src/pages/Cep';
+
+
+
+
 
 function Routes() {
     return (
@@ -12,6 +16,10 @@ function Routes() {
             <Route path="/" exact component={Landind} />
          
             <Route path="/cep" component={Cep} />
+           
+            
+
+
             </Switch> 
         </BrowserRouter>
 

@@ -1,103 +1,103 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #page-form {
-    width: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+#page-form main {
+    background: rgb(180, 180, 236);
+    width: 850px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    border-radius: 10px;
+    margin-top: 400px;
+    padding-top: 5px;
+    overflow: hidden;
   }
-  
-  #page-form main {
-      background: rgb(180, 180, 236);
-      width: 850px;
-      display: flex;
-      flex-direction: column;
-      border-radius: 10px;
-      margin-top: 70px;
-      padding-top: 50px;
-      overflow: hidden;
-    }
 
-    #page-form main h3 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-bottom: 40px;
-      color: rgb(75, 73, 73);
-      font-size: 30px;
-      margin-top: 80px;
-    }
 
-   #page-form main .fieldSepareated{
-     display: flex;
-     align-items: center;
-     margin: auto;
-    }
-
-    #page-form main #fieldCollumn input{
-      display: flex;
-      margin-left: 20px;
-           
-    }
-    #page-form main #fieldCollumn #cepInput{
-      width: 200px;
-     
-    }
-
-    #page-form main #fieldCollumn #rua {
-      width: 450px;
-      margin-left: 10px;
-
-    }
- 
-    
-     #page-form main input {
-      margin: 10px;
-     border-radius:15px;
-     width:320px;
-     height: 35px;
-     border: none;
-     outline: none;
-     font-size: 20px;
-     text-align: center; 
-   }
-  
-  
-  #page-form main .input-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
- 
-  #page-form main .fieldSepareated .input-form span {
-    display: flex;
-    margin-right: 150px;
-    color: rgb(53, 61, 53);
-  }
-  
-
-  .btn {
-    width: 200px;
-    height: 55px;
-    background: #e3e3e7;
+  .headForm {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 30px;
-    margin: auto;
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(53, 61, 53);
-     }
-  
+    margin-bottom: 15px;
+  }
+
+  #page-form main .logopanda {
+    width:130px;
+    margin-right: 10px;
    
-    
-     
-     
+
+
+  }
+  #page-form main h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    color: rgb(75, 73, 73);
+    font-size: 30px;
+    margin-top: 50px;
+
+  }
+
+  #page-form main .wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   
+       }
+
+   #page-form main input {
+   margin: 10px;
+   border-radius:10px;
+   width:370px;
+   height: 35px;
+   border: none;
+   outline: none;
+   font-size: 20px;
+   text-align: center; 
+ }
+
+
+#page-form main .input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
-  
+}
+
+
+#page-form main .input-form span {
+  display: flex;
+  margin-right: 150px;
+  color: rgb(53, 61, 53);
+}
+
+
+#page-form main .wrapper .btn {
+  display: flex;
+  width: 250px;
+  height: 55px;
+  background: #e3e3e7;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin-left: 280px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(53, 61, 53);
+   }
